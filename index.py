@@ -7,7 +7,7 @@ class Spliter:
     return self.salary*0.3
   def savings(self):
     return self.salary*0.2
-mode = (input("Crew or Slave:  ", )).upper
+mode = (input("Crew or Slave:  ", )).upper()
 if mode == "CREW":
   no_days = (float(input("Number of Days: ")))
   total_income = no_days*248.22
