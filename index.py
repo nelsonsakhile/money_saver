@@ -7,9 +7,13 @@ class Spliter:
     return self.salary*0.3
   def savings(self):
     return self.salary*0.2
- 
-no_days = (float(input("Number of Days: ")))
-total_income = no_days*248.22
+mode = (input("Crew or Slave:  ", )).upper
+if mode == "CREW":
+  no_days = (float(input("Number of Days: ")))
+  total_income = no_days*248.22
+else:
+  no_hours =(float(input("Enter no of hours: ")))
+  total_income = no_hours*27.58
 
 #  Deductions Culculator
 def deductions():
@@ -26,10 +30,8 @@ remaining_amount = total_income - deductions()
 Money = Spliter(remaining_amount)
 
 def debt_payment():
-  truworths = 62
   bash = 325
-  vodapay = 242
-  return truworths + bash + vodapay
+  return  bash
 
 def monthly_expenses():
   funds_avail = round(Money.needs(), 2)
