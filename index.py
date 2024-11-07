@@ -109,4 +109,4 @@ if mode == "CREW" or mode == "SLAVE":
   print("Total Change: R", round((ent_expanses()[2]+monthly_expenses()[1]), 2))
   print("----------------------------------")
 else:
-  print("Invalid entry!!!!!")
+  print("Invalid entry!")
