@@ -22,7 +22,7 @@ if mode == "CREW" or mode == "SLAVE":
     UIF = total_income * 0.01
     Skills_Dev = total_income * 0.01
     despute_res = total_income * 0.001
-    income_tax = 300
+    income_tax = 150
     total_deductions = UIF + Skills_Dev + despute_res + income_tax
     
     return total_deductions

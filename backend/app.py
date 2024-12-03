@@ -10,5 +10,5 @@ def create_app():
   database.init_app(app)
   from routes import query_routes
   query_routes(app, database)
-  migrade = Migrate(app, database)
+  migrate = Migrate(app, database)
   return app
